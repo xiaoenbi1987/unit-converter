@@ -4,6 +4,8 @@ A deliberately small web app that converts a numeric value between kilometers an
 in either direction. Built with plain HTML, CSS and vanilla JavaScript: no framework,
 no build step and no runtime dependencies.
 
+**Live demo:** <https://xiaoenbi1987.github.io/unit-converter/>
+
 ## Features
 
 - Enter any number and convert it in one click.
