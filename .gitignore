@@ -1,0 +1,15 @@
+# Dependencies (this project has none, but never commit them if added)
+node_modules/
+
+# Local environment files
+.env
+.env.local
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python bytecode (only the stdlib http.server is used locally)
+__pycache__/

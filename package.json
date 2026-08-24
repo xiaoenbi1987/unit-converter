@@ -1,0 +1,11 @@
+{
+  "name": "unit-converter",
+  "version": "1.0.0",
+  "description": "A minimal kilometers/miles unit converter (HTML + CSS + vanilla JavaScript).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/converter.test.js",
+    "start": "python -m http.server 8000"
+  }
+}
