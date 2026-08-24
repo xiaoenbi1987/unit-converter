@@ -7,12 +7,19 @@ import assert from 'node:assert/strict';
 
 import {
   KILOMETERS_TO_MILES,
+  KILOMETERS_TO_MILES_FACTOR,
   MILES_TO_KILOMETERS,
+  MILES_TO_KILOMETERS_FACTOR,
   convert,
   formatResult,
   parseInput,
   runConversion,
 } from '../src/converter.js';
+
+test('the conversion constants match the documented values', () => {
+  assert.equal(KILOMETERS_TO_MILES_FACTOR, 0.621371);
+  assert.equal(MILES_TO_KILOMETERS_FACTOR, 1.609344);
+});
 
 test('zero converts to zero in both directions', () => {
   assert.equal(convert(KILOMETERS_TO_MILES, 0), 0);

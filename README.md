@@ -132,7 +132,7 @@ page.
 ## Test cases and edge cases
 
 All of the following are covered by the automated suite in `tests/converter.test.js`
-(16 tests, all passing) and were additionally exercised by hand in the browser.
+(17 tests, all passing) and were additionally exercised by hand in the browser.
 
 | Case | Input | Result |
 |---|---|---|
