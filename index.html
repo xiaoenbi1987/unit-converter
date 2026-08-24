@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unit Converter — Kilometers and Miles</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Unit Converter</h1>
+      <p class="subtitle">Convert a distance between kilometers and miles.</p>
+
+      <form id="converter-form" novalidate>
+        <div class="field">
+          <label for="value-input">Value</label>
+          <input
+            id="value-input"
+            name="value"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            placeholder="e.g. 12.5"
+            aria-describedby="error"
+          />
+        </div>
+
+        <fieldset class="field">
+          <legend>Conversion direction</legend>
+          <label class="radio">
+            <input type="radio" name="direction" value="kilometers_to_miles" checked />
+            <span>km &rarr; mi</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="direction" value="miles_to_kilometers" />
+            <span>mi &rarr; km</span>
+          </label>
+        </fieldset>
+
+        <button type="submit">Convert</button>
+      </form>
+
+      <p id="error" class="error" role="alert"></p>
+      <p id="result" class="result" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
